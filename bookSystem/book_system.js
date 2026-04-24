@@ -62,3 +62,11 @@ let books = [];
     document.getElementById('bookDescription').value = '';
     document.getElementById('pagesNumber').value = '';
 }
+
+
+// for book deletion
+function deletebook(index) {
+    // Remove the book entry at the given index
+    books.splice(index, 1);
+    showbooks(); // Refresh the book list after deletion
+}
